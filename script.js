@@ -601,8 +601,8 @@ for (var i = subhamInfo.length - 1; i >=0; i--) {
 
 */
 
-
 /*
+
 var John = {
     firstName : 'John',
     bills : [124, 48, 268, 180, 42],
@@ -682,5 +682,134 @@ if(John.average > Mark.average) {
 } else {
     console.log('Both pays same tips')
 }
+*/
+
+/*
+*Calculate Factorial  
+function factorial(n){
+    return (n != 1) ? n * factorial(n-1) : 1;
+}
+console.log(factorial(5))
 
 */
+
+
+/* Even or Odd in an Array
+let  a = [22,21,3,2,1,4,8,10]
+
+function parray(a){
+    for (let i = 0;i<=(a.length-1);i++){
+        if (a[i]%2==0) {
+            console.log("It is even")
+        } else {
+            console.log("It is odd")
+        }
+    }
+}
+parray(a)
+ */
+/**
+ * 
+ 
+ * Hoisting
+ */
+/*
+//Functions
+calculateAge(1999)
+
+ function calculateAge(year){
+     console.log(2019 - year)
+ }
+//  calculateAge(1999)
+
+
+
+// retirement(1998)
+
+var retirement = function(year){
+    console.log(65 - (2019 - year))
+}
+// retirement(1998)
+
+
+//Variables
+console.log(age);
+var age = 23;
+
+function foo(){
+    // console.log(age);
+    var age = 25;
+    console.log(age);
+}
+foo();
+console.log(age)
+* 
+*/
+
+/*
+ * Scoping
+ */
+/*
+var a = 'Hello'
+first()
+
+function first(){
+    var b = 'Hi'
+    second();
+
+    function second(){
+        var c = 'Hey'
+        third()
+    }
+}
+//third function cannot access first & second function
+//it is outside of the scope and only access global variable
+
+function third() {
+    var d = ' Subham'
+    //console.log(c)
+    console.log(a + d)
+}
+*/
+
+/**
+ * This keyword
+ */
+/*
+//console.log(this)
+calculateAge(1998)
+function calculateAge(year){
+    console.log(2019 - year)
+    console.log(this)
+}
+*/
+/**
+var subham = {
+    name : 'subham',
+    yearOfBirth: 1999,
+    calculateAge: function(){
+        console.log(this)
+        console.log(2019 - this.yearOfBirth)
+
+//regular function and hence this keyword points to window object
+       /* function innerFunction() {
+            console.log(this)
+        }
+        innerFunction();
+       
+    }
+}
+/*
+subham.calculateAge()
+
+
+var shekhar =  {
+    name: 'shekhar',
+    yearOfBirth: 1998,
+}
+//method borrowing
+shekhar.calculateAge = subham.calculateAge;
+shekhar.calculateAge();
+*/
+
+
