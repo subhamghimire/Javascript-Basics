@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 200px;
+    text-align: center;
+}
+
+#click {
+    color: aqua;
+    padding: 10px;
+    background-color: brown;
+    width: 24%;
+    margin-left: 45px;
+}
+
+.hide{
+    padding: 20px;
+    height: 200px;
+    margin-left: 455px;
+    width: 20%;
+    color: bisque;
+    background-color: blue;
+}
+
